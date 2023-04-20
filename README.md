@@ -17,7 +17,7 @@ The goal was to build a simple SPA app and demonstrate proficiency with React an
 
 - JSON placeholder API–I swapped out `json-server` since it will persist changes. Run `npm run server` to start the `json-server`.
 - Tests–The company provided a skeleton app with a 2.5 year old version of React. The skeleton was _not_ bootstrapped with `create-react-app` and there was no set up for running tests. I wanted to be faithful to the Node and React versions they provisioned, and it proved too much effort to set this old app up for testing–especially considering it's just a take home test.
-- CRUD–the instructions did not ask for the D, so this app only supports the C, R, and U.
+- CRUD–the instructions did not ask for the D, so this app only supports the C, the R, and the U.
 - Use of `useContext`–Global state management was not warranted since there were no context-aware UI elements.
 - Use of `useMemo` or `useCallback`–Couldn't justify these optimizations.
 - Authentication–There's no time to implement an authentication flow in a take home project like this.
