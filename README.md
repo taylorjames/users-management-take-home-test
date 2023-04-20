@@ -24,7 +24,7 @@ The goal was to build a simple SPA app and demonstrate proficiency with React an
 - Routing–No time.
 - Robust error handling–No retries or graceful degradation.
 - No lazy loading or other performance optimizations–Just not needed here.
-- No TypeScript–I wouldn't bother with TypeScript unless it was a project I'm spending ≤ 2 weeks on.
+- No TypeScript–I wouldn't bother with TypeScript unless it was a project I'm spending ≥ 2 weeks on.
 
 👇 Below are the original `README.md` notes from the original take home assignment. What you don't see are other instructions like "Do not use component libraries like Material UI", because those instructions were included in an email.
 
