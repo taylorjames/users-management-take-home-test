@@ -23,6 +23,12 @@ const UserManagement = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    /**
+     * Imagine this is an app with multiple pages, upon navigating to this page this effect is triggered.
+     * 
+     * Do you see any issue with navigating to this page and then quickly navigating to another page before
+     * the api responds? How would you solve it?
+     */
     async function fetchUsers() {
       try {
         setIsLoading(true);
