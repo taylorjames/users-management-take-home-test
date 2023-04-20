@@ -1,0 +1,287 @@
+:root {
+  --primary-color: #425a70;
+  --secondary-color: #6f8aa9;
+  --tertiary-color: #ffeadb;
+  --accent-color: #ffad80;
+  --border-light-gray: #c9c9c9;
+  --font-size-heading: 2rem;
+  --font-size-subheading: 1.5rem;
+  --font-size-regular: 1rem;
+  --font-size-small: 0.8rem;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex-grow: 1;
+}
+
+header {
+  height: 6rem;
+}
+
+header,
+footer {
+  color: var(--tertiary-color);
+}
+
+footer p {
+  margin: 2rem 0 0 0;
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+h1 {
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0;
+  font-size: var(--font-size-heading);
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  font-size: var(--font-size-subheading);
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* UsersTable */
+
+.UsersTable {
+  width: 100%;
+  max-width: 1000px;
+  border-spacing: 0;
+  border-radius: 12px;
+  box-shadow: 8px 8px 8px var(--border-light-gray);
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.UsersTable td,
+.UsersTable th {
+  padding: 0.5rem;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid var(--border-light-gray);
+  border-bottom: 1px solid var(--border-light-gray);
+  text-align: left;
+}
+
+.UsersTable th {
+  border-top: 2px solid var(--border-light-gray);
+}
+
+.UsersTable tr:last-child td {
+  border-bottom: 2px solid var(--border-light-gray);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.UsersTable td:first-child,
+.UsersTable th:first-of-type {
+  border-left: 2px solid var(--border-light-gray);
+}
+
+.UsersTable td:last-child,
+.UsersTable th:last-of-type {
+  border-right: 2px solid var(--border-light-gray);
+}
+
+.UsersTable th:first-of-type {
+  border-top-left-radius: 5px;
+}
+
+.UsersTable th:last-of-type {
+  border-top-right-radius: 5px;
+}
+
+.UsersTable thead {
+  background-color: #e0e0e0;
+}
+
+.UsersTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*  UserForm */
+
+.UserForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  color: var(--primary-color);
+}
+
+.UserForm fieldset {
+  display: block;
+  text-align: left;
+  border: 0;
+  padding: 0;
+  margin: 0.75rem 0;
+  width: 100%;
+  min-width: 200px;
+  min-height: 5.5rem;
+}
+
+.UserForm fieldset label,
+.UserForm fieldset span {
+  display: block;
+  padding-left: 0.5rem;
+}
+
+.UserForm input {
+  border: 2px solid var(--border-light-gray);
+  border-radius: 5px;
+  text-align: left;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.invalid-field {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.form-buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.UserForm button {
+  margin: auto;
+}
+
+/* Buttons */
+
+.cancel-button,
+.edit-button {
+  border: 1px solid var(--border-light-gray);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: var(--font-size-regular);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cancel-button {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.edit-button {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+.edit-button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.add-user-button,
+.submit-button {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--border-light-gray);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: var(--font-size-regular);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.add-user-button {
+  position: absolute;
+  right: 0;
+  margin-right: 15%;
+}
+
+.add-user-button:hover,
+.submit-button:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+
+/* Notifications */
+
+.notification-info {
+  background-color: #e6f1ff;
+  color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid #99c2ff;
+}
+
+.notification-error {
+  background-color: #ffe6e6;
+  color: #b30000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ff4d4d;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 999;
+  width: 15%;
+  animation: slide-in-out 4.25s ease-out;
+}
+
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
